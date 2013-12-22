@@ -52,9 +52,10 @@ regarding the Internet:
    d) content hashing.
 
 Dear reader, if you see a lot of problems with the current Internet architecture, like I do, I encourage you to think
-about it and to dream about smarter Internet. There are alternatives like [GNUNet](http://en.wikipedia.org/wiki/GNUnet),
-however, the simplicity and datarichness of current Internet should remain to be competitive. Therefore, our Internet is
-still immature, but hopefully no more than a century later, the Internet protocols will be safer and wiser.
+about it and to dream and share ideas for smarter Internet. There are alternatives like
+[GNUNet](http://en.wikipedia.org/wiki/GNUnet), however, the simplicity and data richness of current Internet should
+remain to be competitive. Therefore, our Internet is still immature, but hopefully no more than a century later, the
+Internet protocols will be safer and wiser.
 
 ### Summary
 
