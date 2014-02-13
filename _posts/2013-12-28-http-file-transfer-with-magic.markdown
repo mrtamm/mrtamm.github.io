@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTTP &#150; File Transfer With Magic"
+title:  "HTTP – File Transfer With Magic"
 date:   2013-12-28 23:30:00
 categories: internet http
 ---
