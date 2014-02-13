@@ -15,6 +15,7 @@
       <title>{{ post.title }}</title>
       <link>http://rocket.ws{{ post.url }}</link>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.excerpt | escape }}</description>
       <guid>http://rocket.ws{{ post.url }}</guid>
     </item>
     {% endfor %}
