@@ -12,7 +12,7 @@ textarea:-moz-placeholder { color: #a9a9a9; }
 
 a         { color: #55f; font-weight: 600; }
 a:hover   { color: #69f; }
-a:visited { color: #55f; font-weight: normal; }
+a:visited { color: #55f; font-weight: 500; }
 
 /** custom follows **/
 html, body { height: 100%; }
