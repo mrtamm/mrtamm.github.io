@@ -3,21 +3,21 @@
 
 body, select, input, textarea { color: #333; }
 
-em   { text-decoration: underline; font-style: none; }
+em   { text-decoration: underline; font-style: normal; }
 ins  { background-color: #fcd700; color: #000; text-decoration: none; }
 mark { background-color: #fcd700; color: #000; font-style: italic; font-weight: bold; }
 
 input:-moz-placeholder    { color: #a9a9a9; }
 textarea:-moz-placeholder { color: #a9a9a9; }
 
-a         { color: #03f; }
+a         { color: #55f; font-weight: 600; }
 a:hover   { color: #69f; }
-a:visited { color: #a0a; }
+a:visited { color: #55f; font-weight: normal; }
 
 /** custom follows **/
 html, body { height: 100%; }
 body {
-  background-color: #e9e9e9;
+  background-color: #aaa;
   text-align: center;
   font: 16px Helmet, Freesans, sans-serif;
 }
