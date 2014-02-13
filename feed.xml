@@ -5,7 +5,7 @@
   <channel>
     <title>{{ site.name }}</title>
     <link>http://rocket.ws/</link>
-    <description>Personal thougths about Web technologies</description>
+    <description>Personal thoughts about Internet and web technologies</description>
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <webMaster>martti.tamm@gmail.com</webMaster>
@@ -14,7 +14,6 @@
       <title>{{ post.title }}</title>
       <link>{{ post.url }}</link>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <guid>http://liftoff.msfc.nasa.gov/2003/06/03.html#item573</guid>
     </item>
     {% endfor %}
   </channel>
