@@ -3,4 +3,5 @@ safe: true
 lsi: false
 pygments: true
 encoding: UTF-8
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:year/:month/:title
+markdown: kramdown
