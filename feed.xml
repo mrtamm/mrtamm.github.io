@@ -1,0 +1,23 @@
+---
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name }}</title>
+    <link>http://rocket.ws/</link>
+    <description>Personal thoughts about Internet and web technologies</description>
+    <language>en</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <webMaster>martti.tamm@gmail.com (Martti Tamm)</webMaster>
+    <atom:link href="http://rocket.ws/feed.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://rocket.ws{{ post.url }}</link>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.excerpt | escape }}</description>
+      <guid>http://rocket.ws{{ post.url }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
