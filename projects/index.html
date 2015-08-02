@@ -1,0 +1,99 @@
+---
+layout: page
+menu: "projects"
+title: Projects | Web Rocket
+---
+
+<h1>Projects</h1>
+
+<p>
+Here is an overview of some Java libraries I have written and published under
+<a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache2
+license</a>. It means they are free to be used in other projects, feedback and
+updates are more than welcome.
+</p>
+
+<ul>
+<li><a href="#sqlstore">SqlStore</a></li>
+<li><a href="#rocket-config">Rocket-Config</a></li>
+<li><a href="#rocket-path">Rocket-Path</a></li>
+</ul>
+
+<h2 id="sqlstore">SqlStore</h2>
+
+<p>
+Calling SQL from Java code is some what old and ugly problem, which has been
+tried to cure with Object-Relational mappings (frameworks) and other libraries,
+which generate SQL code using query builders to enable compile-time query
+correctness checking.
+</p>
+
+<p>
+SqlStore belives in opposite approach where SQL statements should be executed as
+they are, and that reading result-set values back to Java objects (the mapping)
+does not have to part of Java code.
+</p>
+
+<p>
+With SqlStore, SQL statements are stored outside of Java code in separate files
+with one-to-one relationship with the class or interface where the SQL
+statements are used. SqlStore provides an API for loading these SQL statements
+at bootstrap phase, and enables invoking of these statements by name at runtime.
+</p>
+
+<p>
+It is possible to hide execution of SQL statements behind a custom interface so
+that calling its method actually triggers SqlStore script execution behind the
+scenes.
+</p>
+
+<p>
+SqlStore enables separation of SQL and Java code while also letting developers
+write the SQL statements they actually want to execute. In addition, since the
+SQL code is independent of application, it becomes easier to support different
+database vendors as the application can be distributed with the script files of
+the corresponding database.
+</p>
+
+<p>
+<em>SqlStore</em> is a small Java library, has no external dependencies, and
+is open-sourced under Apache2 license. You can read
+<a href="/sqlstore/">more about it here</a>.
+</p>
+
+<h2 id="rocket-config">Rocket-Config</h2>
+
+<p>
+Many programs read their settings from a plain text file. Java, by default,
+supports properties file, which is good but not perfect for most cases.
+<em>Rocket-Config</em> prefers a common settings syntax from the UNIX world,
+where the settings file is divided into sections and each section can have its
+own custom format for specifying parameters.
+<p>
+
+<p>To read such configuration files, <em>Rocket-Config</em> provides an API for
+describing sections and their content formats, and it takes an object where the
+parsed values will be stored. Once the parser completes, application has an
+object containing validated setting values to use through-out its components.
+</p>
+
+<p>
+<em>Rocket-Config</em> is a small Java library, has no external dependencies,
+and is open-sourced under Apache2 license. You can read
+<a href="/rocket-config/">more about it here</a>.
+</p>
+
+<h2 id="rocket-path">Rocket-Path</h2>
+
+<p>
+Tree is a very common data structure in computer science. It is very effective
+in many use cases, such as file systems, or dividing large domains into smaller
+sections. Hence, this library aims to provide a simple tree structure, several
+ways to construct a tree, and a path object to simplify tree traversing.
+</p>
+
+<p>
+<em>Rocket-Path</em> is a small Java library, has no external dependencies, and
+is open-sourced under Apache2 license. You can read
+<a href="/rocket-path/">more about it here</a>.
+</p>

@@ -1,16 +1,12 @@
 ---
-layout: default
-title: Web Rocket Blog
+layout: blog
+title: Blog | Web Rocket
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <p>Welcome! I use this web site to share thoughts on Internet technologies, their strengths and weaknesses, and try to
-  find ways to improve them. I don't aim for tutorials or how-to tips as there is plenty of them on the Internet. I
-  rather focus on the design and complexity managment (a.k.a. simplicity) on the development side.</p>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span class="date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<h1>Blog Posts</h1>
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span class="date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

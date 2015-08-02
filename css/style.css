@@ -27,45 +27,65 @@ h4 { font-size: 1.1em; line-height: 1.1em; margin-bottom: 0.5em; margin-top: 1.5
 p, ul, ol { line-height: 1.6em; margin-top: 2.0em; margin-bottom: 2.0em; }
 ul, ol { padding-left: 3em; }
 
-ul.posts {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-ul.posts li {
-  line-height: 1.75em;
-}
-
 .page {
   background-color: #fff;
   border: 2px solid #999;
-  border-top: 0px none; 
+  border-top: 0px none;
   text-align: justify;
   max-width: 48em;
   margin: 0em auto;
   padding: 1.5em 2.5em;
 }
 
-.page .date {
-  color: #aaa;
-  font-size: 0.9em;
-  font-weight: bold;
-  font-family: "Nimbus Sans", Liberation, Freesans, sans-serif;
-}
-
-.page P.date { margin: 0.1em 0em 0.4em; }
-
 .page header.site {
-  border-bottom: 3px solid #333;
   margin-bottom: 3em;
 }
 
 .page header.site .title {
   display: inline-block;
   padding: 0.5em 0em;
-  color: #333;
   font-size: 2.0em;
+}
+
+.page header.site a {
+  color: #333;
   text-decoration: none;
+}
+
+.page header.site ul {
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid #333;
+}
+
+.page header.site li {
+  margin: 0;
+  padding: 0.4em 0.5em;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-bottom: 0px none;
+  color: #333;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.page header.site li.active {
+  background-color: #333;
+  border-color: #333;
+}
+
+.page header.site li.active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page header.site li:hover {
+  background-color: #eee;
+  border-color: #333;
+}
+
+.page header.site li:hover a {
+  color: #333;
 }
 
 .page footer.site {
@@ -76,23 +96,30 @@ ul.posts li {
   overflow: hidden;
 }
 
-.page footer.site .contact {
-  float: left;
-  margin-right: 3em;
+.page .date {
+  color: #aaa;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: "Nimbus Sans", Liberation, Freesans, sans-serif;
 }
 
-.page footer.site .contact a {
-  color: #8085C1;
+.page p.date { margin: 0.1em 0em 0.4em; }
+
+.page ul.posts {
+  padding-left: 0;
 }
 
-.page footer.site .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+.page ul.posts li {
+  line-height: 1.75em;
+  list-style-type: none;
 }
 
-.page footer.site .rss img {
-  border: 0;
+.page ul li {
+  list-style-type: disc;
+}
+
+.page ol li {
+  list-style-type: decimal;
 }
 
 /* standard */
@@ -104,6 +131,7 @@ ul.posts li {
 
 .post ul, .post ol {
   margin-left: 1.35em;
+  list-style-type: none;
 }
 
 .post code {

@@ -1,0 +1,21 @@
+
+<header class="site">
+  <a class="title" href="/" title="Home">{{ site.name }}</a>
+  <ul>
+    {% if page.menu == null %}
+    <li class="active"><a href="/">Blog</a></li>
+    {% else %}
+    <li><a href="/">Blog</a></li>
+    {% endif %}
+    {% if page.menu == 'projects' %}
+    <li class="active"><a href="/projects/">Projects</a></li>
+    {% else %}
+    <li><a href="/projects/">Projects</a></li>
+    {% endif %}
+    {% if page.menu == 'about' %}
+    <li class="active"><a href="/about/">About</a></li>
+    {% else %}
+    <li><a href="/about/">About</a></li>
+    {% endif %}
+  </ul>
+</header>
