@@ -36,13 +36,13 @@ of a template language. And SQL is still a preferred choice for data retrieval
 from a database. Therefore, polyglot programming is a normal and sane part of
 developer's everyday work.
 
-Notice how different systems/modules need need some glue in-between. For
-example, the "glue" between a programm and its rendered HTML is a template file
-and rendering engine. The "glue" between between two systems might be JSON over
-HTTP, while the programs will work with the data through a JSON library (API is
+Notice how different systems/modules need some glue in-between. For example, the
+"glue" between a programm and its rendered HTML is a template file and rendering
+engine. The "glue" between between two systems might be JSON over HTTP, while
+the programs will work with the data using a JSON library (API of the library is
 the "glue" here).
 
-Although an API can be expressive, also consider as an option to express an
+Although any API can be expressive, also consider as an option to express an
 intent through some other medium the module in use could access and evaluate.
 Again, the HTML template is a classical example here, but also configuration,
 public/private keys, SQL queries with placeholders, etc, which can be expressed
@@ -64,5 +64,6 @@ likely to be spaghetti.
 
 All in all, don't be restricted by the choices of main programming languages.
 They are just needed for building more powerful and expressive tools, which need
-an expressive API and friendly syntax!
-
+an expressive API and friendly syntax! Although I tried to be generalist here,
+I'll return to this topic in my following posts with more specific and new
+examples.
